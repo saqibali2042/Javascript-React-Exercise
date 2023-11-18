@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Function and Types</h2> 
+
+   <script>
+    // Functions and Function Types
+    //A function in programming is a block of organized, reusable code that performs a specific task or group of tasks.
+    // Function Declaration
+    function myFunction(a, b) {
+        return a * b;
+    }
+    console.log(myFunction(5, 6)); // 30
+
+ 
+
+   
+
+    // Self-Invoking Functions
+    // A self-invoking expression is invoked (started) automatically, without being called.
+    (function () {
+        var x = "Hello!!"; // I will invoke myself
+        console.log(x);
+    })(); // Hello!!
+
+
+    // Anonymous Functions
+    // An anonymous function is a function without a name. Anonymous functions are often used in JavaScript for callback functions
+    setTimeout(function() {
+    console.log('This message will appear after 2 seconds');
+    }, 2000);
+
+    // callback function is anonymous function
+    
+    // Arrow Functions
+    // Arrow functions allow us to write shorter function syntax:
+    // Before
+    var hello = function() {
+        return "Hello World!";
+    }
+    // With Arrow Function
+    var hello = () => {
+        return "Hello World!";
+    }
+    // Even Shorter
+    var hello = () => "Hello World!";
+
+
+
+   </script>
+</body>
+</html>
