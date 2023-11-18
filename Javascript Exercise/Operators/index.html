@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Operators</h2>
+</body>
+</html>
+
+<script>
+//   Comparison Operators
+//   == equal to
+// example of == operator
+var x = 5;
+var y = 5;
+console.log("x == y: " + x == y); // returns true
+
+//   === equal value and equal type
+// example of === operator
+var x = 5;
+var y = "5";
+console.log("x === y: " + x === y); // returns false
+
+//   != not equal
+// example of != operator
+var x = 5;
+var y = 8;
+console.log("x != y: " + x != y); // returns true
+
+//   !== not equal value or not equal type
+// example of !== operator
+var x = 5;
+var y = "5";
+console.log("x !== y: " + x !== y); // returns true
+
+//   > greater than
+// example of > operator
+var x = 5;
+var y = 8;
+console.log("x > y: " + x > y); // returns false
+
+//   < less than
+// example of < operator
+var x = 5;
+var y = 8;
+console.log("x < y: " + x < y); // returns true
+
+//   >= greater than or equal to
+// example of >= operator
+var x = 5;
+var y = 8;
+console.log("x >= y: " + x >= y); // returns false
+
+//   <= less than or equal to
+// example of <= operator
+var x = 5;
+
+
+// logical operators
+//   && logical and
+// example of && operator
+var x = 6;
+console.log("x > 1 && x < 10: " + x > 1 && x < 10); // returns true
+
+//   || logical or
+// example of || operator
+var x = 6;
+console.log("x > 1 || x < 10: " + x > 1 || x < 10); // returns true
+
+//   ! logical not
+// example of ! operator
+var x = 6;
+console.log("!(x > 1 && x < 10): " + !(x > 1 && x < 10)); // returns false
+
+//   typeof
+// example of typeof operator
+var x = 6;
+console.log("typeof x: " + typeof x); // returns number
+
+// ternary operator
+// example of ternary operator
+var age = 18;
+var voteable = (age < 18) ? "Too young" : "Old enough";
+console.log(voteable); // returns Old enough
+
+
+
+// Spread Operator
+// example of spread operator
+var arr1 = [1, 2, 3];
+var arr2 = [...arr1, 4, 5, 6];
+console.log("arr2: " + arr2); // returns [1, 2, 3, 4, 5, 6]
+
+// Rest Operator
+// example of rest operator
+function sum(x, y ,z) {
+    console.log(x + y + z);
+}
+
+const num1 = [1, 3, 4, 5];
+
+sum(...num1); // 8
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Difference between var vs let vs const</h2>
+    <script>
+        
+        // var
+        var a = 10;
+        var a = 20;
+        console.log(a); // We can redeclare var variable
+        // let
+        let b = 10;
+        // let b = 20;  We cannot redeclare let variable
+        console.log(b);
+        // const
+        const c = 10;
+        // const c = 20; We cannot redeclare const variable
+        console.log(c);
+
+
+        // Reassign of Variable
+        var ab = 10;
+        ab = 20;
+        console.log(a); // We can reassign var variable
+
+        let bc = 10;
+        b = 20;
+        console.log(b); // We can reassign let variable
+
+        const cd = 10;
+        // c = 20; We cannot reassign const variable
+        console.log(c);
+
+        // Scope of Variable
+        // var
+        var x = 10;
+        if(true){
+            var x = 20;
+            console.log(x); // 20
+        }
+        console.log(x); // 20
+
+        // let
+        let y = 10;
+        if(true){
+            let y = 20;
+            console.log(y); // 20
+        }
+        console.log(y); // 10
+
+        // const
+        const z = 10;
+        if(true){
+            const z = 20;
+            console.log(z); // 20
+        }
+        console.log(z); // 10
+
+        // Hoisting
+        // var
+        console.log(a); // undefined
+        var a = 10;
+        console.log(a); // 10   
+
+        // let
+        // console.log(b); // ReferenceError: Cannot access 'b' before initialization
+        // let b = 10;
+        console.log(b); // 10
+
+        // const
+        // console.log(c); // ReferenceError: Cannot access 'c' before initialization
+        // const c = 10;
+        console.log(c); // 10
+
+
+        // Function Scope
+        // var
+        function varScope(){
+            var a = 10;
+            console.log(a); // 10
+        }
+        varScope();
+        // console.log(a); // ReferenceError: a is not defined
+
+        // let
+        function letScope(){
+            let b = 10;
+            console.log(b); // 10
+        }
+        letScope();
+
+        // const
+        function constScope(){
+            const c = 10;
+            console.log(c); // 10
+        }
+        constScope();
+
+        // Block Scope
+        // var
+        function varBlockScope(){
+            if(true){
+                var a = 10;
+                console.log(a); // 10
+            }
+            console.log(a); // 10
+        }
+        varBlockScope();
+
+        // let
+        function letBlockScope(){
+            if(true){
+                let b = 10;
+                console.log(b); // 10
+            }
+            // console.log(b); // ReferenceError: b is not defined
+        }
+        letBlockScope();
+
+        // const
+        function constBlockScope(){
+            if(true){
+                const c = 10;
+                console.log(c); // 10
+            }
+            // console.log(c); // ReferenceError: c is not defined
+        }
+        constBlockScope();
+
+       
+
+
+
+
+
+      
+
+
+        
+
+
+
+        
+
+
+     
+
+        
+    </script>
+</body>
+</html>
