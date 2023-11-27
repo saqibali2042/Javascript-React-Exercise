@@ -77,7 +77,7 @@ const RegisterForm = () => {
           value={formData.password}
           onChange={handleInputChange}
         />
-        <button type="submit">Submits</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
