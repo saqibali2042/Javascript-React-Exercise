@@ -38,7 +38,7 @@ const NameListReducer = () => {
     return (
         <div>
 
-            <h3>Use of useState</h3>
+            <h3>Use of useReducer</h3>
             <ul>
                 {state.names.map((name, index) => (
                     <li key={index}>{name}</li>

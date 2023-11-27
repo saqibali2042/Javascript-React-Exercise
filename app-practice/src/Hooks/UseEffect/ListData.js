@@ -8,10 +8,7 @@ const ListData = () => {
       try {
         const response = await fetch('/data.json');
         const jsonData = await response.json();
-        
-
-        console.log(jsonData);
-        setData(jsonData);
+        setData(jsonData.users);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -24,7 +21,14 @@ const ListData = () => {
     <div>
       <h1>List Data</h1>
       <ul>
-        
+        {
+         data.map((item) => (
+          <li key={item.id}>
+            <p>{item.name}</p>
+            <p>{item.email}</p>
+          </li>
+        )) 
+        }
       </ul>
     </div>
   );
